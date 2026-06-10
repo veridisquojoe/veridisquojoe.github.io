@@ -1,0 +1,77 @@
+title: Joe Eldredge
+subtitle: Data Science Portfolio
+name: Joe Eldredge
+description: >-
+  Data science, machine learning, and analytics — geospatial visualization,
+  NLP for data validation, and data-driven decision making.
+url: "https://veridisquojoe.github.io"
+repository: veridisquojoe/veridisquojoe.github.io
+
+remote_theme: mmistakes/minimal-mistakes@4.26.2
+minimal_mistakes_skin: air
+
+search: true
+
+plugins:
+  - jekyll-include-cache
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-sitemap
+
+author:
+  name: "Joe Eldredge"
+  avatar: "/assets/images/logo.jpeg"
+  bio: "Data science & data management. I lead a team validating national transit data and build tools to make it useful."
+  location: "USA"
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/joseph-eldredge-75ab6349/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/veridisquojoe"
+
+footer:
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/joseph-eldredge-75ab6349/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/veridisquojoe"
+
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+
+defaults:
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: false
+      classes: wide
+      sidebar:
+        nav: ""
+
+include:
+  - _pages
+
+exclude:
+  - README.md
+  - LICENSE
+
+markdown: kramdown
+highlighter: rouge
+timezone: America/New_York

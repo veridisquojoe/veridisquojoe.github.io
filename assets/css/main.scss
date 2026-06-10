@@ -1,0 +1,59 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+// Carry over the "Copper Aquamarine Dream" palette from the previous site
+$primary-color: #6c739c;
+$link-color: #c56b62;
+$link-color-hover: #dea785;
+$masthead-link-color: #424658;
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+// Polish
+.page__hero--overlay {
+  background: linear-gradient(135deg, #6c739c 0%, #424658 100%);
+}
+
+.archive__item {
+  border-radius: 8px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.archive__item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px -3px rgba(66, 70, 88, 0.15);
+}
+
+.archive__item-teaser {
+  border-radius: 8px 8px 0 0;
+}
+
+.feature__item .archive__item {
+  background: #fff;
+  box-shadow: 0 4px 6px -1px rgba(66, 70, 88, 0.1);
+  padding-bottom: 0.75em;
+}
+
+.feature__item .archive__item-body {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.map-embed {
+  width: 100%;
+  height: 600px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(66, 70, 88, 0.15);
+  margin: 1em 0 2em;
+}
+
+@media (max-width: 768px) {
+  .map-embed {
+    height: 400px;
+  }
+}
