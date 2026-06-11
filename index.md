@@ -14,6 +14,13 @@ intro:
       it into insight. Below are a few highlights — see [all projects](/portfolio/)
       for the full list.
 feature_row:
+  - image_path: /assets/images/teasers/chatbot.svg
+    alt: "Transit Safety and Security Assistant"
+    title: "Transit Safety & Security Assistant"
+    excerpt: "A RAG chatbot that answers plain-English questions about ~50k public transit safety records — grounded, cited answers powered by Claude. Try it live."
+    url: /portfolio/transit-safety-chatbot/
+    btn_label: "View project"
+    btn_class: "btn--primary"
   - image_path: /assets/images/teasers/fta_safety.svg
     alt: "FTA Safety Analysis"
     title: "FTA Safety Analysis & Visualization"
@@ -26,13 +33,6 @@ feature_row:
     title: "NLP for Data Validation"
     excerpt: "A proof of concept using NLP to extract structured facts from free-text notes and cross-validate them against tabular records."
     url: /portfolio/nlp-data-validation/
-    btn_label: "View project"
-    btn_class: "btn--primary"
-  - image_path: /assets/images/teasers/haiti.svg
-    alt: "Haiti Relief Project"
-    title: "Haiti Relief Project"
-    excerpt: "How data science could have augmented life-saving relief after the 2010 Haiti earthquake — classification with a tailored F-score."
-    url: /portfolio/haiti-relief/
     btn_label: "View project"
     btn_class: "btn--primary"
 ---
